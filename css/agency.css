@@ -26,7 +26,7 @@ a:hover {
 
 h1,
 h2,
-h3,
+h4,
 h4,
 h5,
 h6 {
@@ -44,7 +44,7 @@ section h2.section-heading {
   margin-bottom: 15px;
 }
 
-section h3.section-subheading {
+section h4.section-subheading {
   font-size: 16px;
   font-weight: 400;
   font-style: italic;
@@ -212,14 +212,15 @@ header.masthead .intro-text .intro-heading {
     font-size: 40px;
     font-style: italic;
     line-height: 40px;
-    margin-bottom: 25px;
+    margin: 35px 0 65px;
     font-family: 'Noto Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
   }
   header.masthead .intro-text .intro-heading {
     font-size: 75px;
     font-weight: 700;
     line-height: 75px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 }
@@ -272,7 +273,7 @@ header.masthead .intro-text .intro-heading {
   margin-top: -12px;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4,
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
   margin: 0;
 }
@@ -452,12 +453,13 @@ header.masthead .intro-text .intro-heading {
   margin-left: 0;
   text-align: center;
   color: white;
-  border: 7px solid #e9ecef;
+  border: 7px solid #fff;
   border-radius: 100%;
   background-color: #fed136;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 
-.timeline > li .timeline-image h4 {
+.timeline > li .timeline-image h3 {
   font-size: 10px;
   line-height: 14px;
   margin-top: 12px;
@@ -487,12 +489,13 @@ header.masthead .intro-text .intro-heading {
   margin-bottom: 0;
 }
 
-.timeline .timeline-heading h4 {
+.timeline .timeline-heading h3 {
   margin-top: 0;
   color: inherit;
+  font-weight: 700;
 }
 
-.timeline .timeline-heading h4.subheading {
+.timeline .timeline-heading h3.subheading {
   text-transform: none;
 }
 
@@ -521,7 +524,7 @@ header.masthead .intro-text .intro-heading {
     height: 100px;
     margin-left: -50px;
   }
-  .timeline > li .timeline-image h4 {
+  .timeline > li .timeline-image h3 {
     font-size: 13px;
     line-height: 18px;
     margin-top: 16px;
@@ -545,7 +548,7 @@ header.masthead .intro-text .intro-heading {
     height: 150px;
     margin-left: -75px;
   }
-  .timeline > li .timeline-image h4 {
+  .timeline > li .timeline-image h3 {
     font-size: 18px;
     line-height: 26px;
     margin-top: 30px;
@@ -567,7 +570,7 @@ header.masthead .intro-text .intro-heading {
     height: 170px;
     margin-left: -85px;
   }
-  .timeline > li .timeline-image h4 {
+  .timeline > li .timeline-image h3 {
     margin-top: 40px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
@@ -586,7 +589,7 @@ header.masthead .intro-text .intro-heading {
   border: 7px solid #fff;
 }
 
-.team-member h4 {
+.team-member h3 {
   margin-top: 25px;
   margin-bottom: 0;
   text-transform: none;
@@ -696,4 +699,21 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
+}
+
+
+.about-img{
+  display: inline-block;
+  border: 10px solid #e9ecef;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #e9ecef;
+  max-width: 450px;
+  box-shadow: 4px 4px 16px rgba(0,0,0,0.3);
+}
+
+.about-img img{
+  display: block;
+  border-radius: 7px;
+  max-width: 100%;
 }
