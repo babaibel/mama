@@ -47,4 +47,28 @@
     $(".navbar").removeClass("d-none");
   })
 
+  $('.js-popup-img').magnificPopup({
+    type: 'image',
+    mainClass: 'mfp-with-zoom',
+    closeOnContentClick: true,
+    callbacks: {
+        open: function() {
+            $('.navbar.fixed-top').css({'overflow-y': 'scroll'});
+        },
+        close: function() {
+            $('.navbar.fixed-top').css({'overflow-y': 'visible'});
+        }
+    },
+    zoom: {
+      enabled: true,
+      duration: 300,
+      easing: 'ease-in-out',
+
+      opener: function(openerElement) {
+        return openerElement.is('img') ? openerElement : openerElement.find('img');
+      }
+    }
+
+  });
+
 })(jQuery); // End of use strict

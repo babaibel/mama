@@ -35,7 +35,7 @@ h6 {
 }
 
 section {
-  padding: 100px 0;
+  padding: 80px 0;
 }
 
 section h2.section-heading {
@@ -55,7 +55,7 @@ section h4.section-subheading {
 
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 120px 0;
   }
 }
 
@@ -69,7 +69,7 @@ section h4.section-subheading {
   padding: 20px 40px;
 }
 
-.btn-primary {
+.btn-primary{
   background-color: #fed136;
   border-color: #fed136;
 }
@@ -599,65 +599,6 @@ header.masthead .intro-text .intro-heading {
   margin-top: 0;
 }
 
-section#contact {
-  background-color: #212529;
-  background-image: url("../img/map-image.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-section#contact .section-heading {
-  color: #fff;
-}
-
-section#contact .form-group {
-  margin-bottom: 25px;
-}
-
-section#contact .form-group input,
-section#contact .form-group textarea {
-  padding: 20px;
-}
-
-section#contact .form-group input.form-control {
-  height: auto;
-}
-
-section#contact .form-group textarea.form-control {
-  height: 248px;
-}
-
-section#contact .form-control:focus {
-  border-color: #fed136;
-  box-shadow: none;
-}
-
-section#contact ::-webkit-input-placeholder {
-  font-weight: 700;
-  color: #ced4da;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-section#contact :-moz-placeholder {
-  font-weight: 700;
-  color: #ced4da;
-  /* Firefox 18- */
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-section#contact ::-moz-placeholder {
-  font-weight: 700;
-  color: #ced4da;
-  /* Firefox 19+ */
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-section#contact :-ms-input-placeholder {
-  font-weight: 700;
-  color: #ced4da;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
 footer {
   padding: 25px 0;
   text-align: center;
@@ -704,16 +645,80 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .about-img{
   display: inline-block;
-  border: 10px solid #e9ecef;
+  border: 10px solid #fed136;
   border-radius: 10px;
   overflow: hidden;
-  background: #e9ecef;
+  background: #fed136;
   max-width: 450px;
   box-shadow: 4px 4px 16px rgba(0,0,0,0.3);
 }
 
-.about-img img{
+.review-img{
+  display: inline-block;
+  border: 5px solid #fed136;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
+  background: #fdfdfd;
+  max-width: 350px;
+  box-shadow: 4px 4px 16px rgba(0,0,0,0.3);
+}
+
+.about-img img,
+.review-img img{
   display: block;
   border-radius: 7px;
   max-width: 100%;
+}
+
+.review-img a{
+  outline: 0!important;
+}
+
+.reviews-row{
+  margin-bottom: 65px;
+  padding-bottom: 68px;
+  border-bottom: 3px solid #fff;
+  box-shadow: inset 0 -8px 4px -8px rgba(0,0,0,0.3);
+}
+
+.reviews-row:last-child{
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+  box-shadow: none;
+}
+
+.reviews-row h3{
+  margin-top: 0;
+}
+
+.reviews-row h4{
+  font-size: 16px;
+  margin: 0 0 10px;
+  color: #777;
+}
+
+.reviews-row .col-md-3 + .col-md-9{
+  padding-left: 35px;
+}
+
+.contact-map{
+  border: 10px solid #fed136;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fed136;
+  box-shadow: 4px 4px 16px rgba(0,0,0,0.3);
+}
+
+.contact-map iframe{
+  display: block;
+}
+
+.navbar-brand{
+  padding-top: 0;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link--tell{
+  color: #fed136;
 }
