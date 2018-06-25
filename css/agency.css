@@ -722,3 +722,30 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 #mainNav .navbar-nav .nav-item .nav-link--tell{
   color: #fed136;
 }
+
+.list{
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.list li{
+  padding-left: 15px;
+  margin-bottom: 3px;
+  font-size: 15px;
+  line-height: 19px;
+  position: relative;
+  color: #333;
+}
+
+.list li:before{
+  content: "";
+  position: absolute;
+  left: 0;  
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  margin-top: -2px;
+  background: #fed136;
+}
